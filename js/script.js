@@ -43,9 +43,25 @@ $(document).ready(function() {
 
                 window.location.hash = hash;
             });
-        } // End if
+        }
     });
 });
+
+
+// window.onscroll = function() { myFunction() };
+
+// var navbar = document.getElementById("navbar");
+
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky")
+//     } else {
+//         navbar.classList.remove("sticky");
+//     }
+// }
+
 
 // $(".navItem").on("mouseover", function() {
 //     $(this).animate({ width: "+=50", height: "+=20", "font-size": "+=10", opacity: "0.5" }, 1000);

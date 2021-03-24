@@ -35,6 +35,12 @@ button {
     justify-content: center;
 }
 
+
+/* #top {
+    padding: 30px;
+    min-height: 50vh;
+} */
+
 .headline {
     display: flex;
     width: auto;
@@ -48,6 +54,16 @@ button {
     margin: 0px;
     color: navy;
 }
+
+img {
+    height: 50vh;
+    width: auto;
+}
+
+
+/* .content {
+    padding: 16px;
+} */
 
 
 /* Title */
@@ -78,6 +94,9 @@ nav {
     height: 70px;
     border-top: 2px solid navy;
     border-bottom: 2px solid navy;
+    overflow: hidden;
+    background-color: antiquewhite;
+    z-index: 100000;
 }
 
 nav>a {
@@ -102,10 +121,6 @@ nav>a:hover {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.content {
-    padding: 16px;
 }
 
 .sticky+.content {
@@ -225,7 +240,7 @@ section>div {
         width: auto;
         height: 800px;
     }
-    /* Bottom Nav */
+    /* Nav */
     nav {
         display: flex;
         width: auto;
