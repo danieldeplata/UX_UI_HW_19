@@ -28,6 +28,25 @@ $(".togglePush").on("click", function() {
     $(this).next(".toggleDrop").slideToggle("slow");
 });
 
+$(document).ready(function() {
+    $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function() {
+
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
+
 // $(".navItem").on("mouseover", function() {
 //     $(this).animate({ width: "+=50", height: "+=20", "font-size": "+=10", opacity: "0.5" }, 1000);
 //     $(".nav").animate({ height: "+=20" });
